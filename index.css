@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif ;
+}
+
+.square {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(233,235,247,1) 0%, rgba(253,253,254,1) 100%);
+    max-width: 480px;
+    max-height: 418px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: ellipse(100% 100% at 97% 100%);
+}
+
+.container {
+    max-width: 1343px;
+    max-height: 635px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(236,237,248,1) 0%, rgba(254,254,255,1) 100%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content{
+    max-width: 1208px;
+    max-height: 522px;
+    width: 100%;
+    height: 100%;
+    margin: 56px 0 56px 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.text {
+    max-width: 517px;
+    height: 286px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.text-1 {
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+.text-2 {
+    font-size: 47px;
+}
+
+.text-3 {
+    line-height: 30px;
+}
+
+.text-1, .text-2, .card-text-1, .card-text-2{
+    margin: 0;
+    padding: 0;
+}
+
+.text-2, .card-text-1 {
+    color: #1a237e;
+}
+
+.text-2 span {
+    color: #314efe;
+}
+
+.text-1, .text-3, .card-text-2 {
+    color: #5c6bc0;
+}
+
+.action-btn {
+    width: 85px;
+    height: 36px;
+    background-color: #ffab02;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    height: 522px;
+    width: 100%;
+    position: relative;
+}
+
+.triangle {
+    max-width: 325px;
+    max-height: 240px;
+    width: 100%;
+    height: 100%;
+    background: #e9eaf7;
+    position: absolute;
+    align-self: center;
+    top: 33%;
+    right: 19%;
+    margin: 0 ;
+    padding: 0;
+    z-index: -1;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.card-group-1, .card-group-2{
+    height: 498px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-group-1 {
+    align-self: flex-start;
+    margin: 0 22px 0 0;
+}
+
+.card-group-2 {
+    align-self: flex-end;
+}
+
+.card {
+    max-width: 287px;
+    max-height: 237px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content {
+    width: 231px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 27px;
+}
+
+.card-logo {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.card-text-1 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.card-text-2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1218px) {
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .container {
+        max-height: 100%;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card-grid {
+        margin-bottom: 30px;
+    }
+    
+    .text {
+        width: auto;
+        height: auto;
+        margin: 10px 10px 30px;
+    }
+
+    .text-2 {
+        margin: 20px 0;
+    }
+
+    .text-3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+
+    .card-grid {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+
+    .card-group-1, .card-group-2 {
+        margin: 10px;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 315px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-text-1 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 10px 0;
+    }
+
+    .text-2 {
+        font-size: 37px;
+    }
+}
